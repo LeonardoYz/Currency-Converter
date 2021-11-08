@@ -11,7 +11,6 @@
     </a>
   </h2>
 </div>
-<br>
 
 <div> 
   <h3>🖥️ Desktop</h3>
