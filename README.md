@@ -16,7 +16,6 @@
   <h3>🖥️ Desktop</h3>
   <img src="./readme-files/desktop-preview.gif">
 </div>
-<br>
 
 <div>
   <h3>📱 Mobile</h3>
