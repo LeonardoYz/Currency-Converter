@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/images/money-logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/553104d029.js" crossorigin="anonymous"></script>
+  <title>Conversor de Moedas</title>
+</head>
+<body>
+  <!--=== HEADER ===-->
+  <header id="header">
+    <div class="wrapper" id="header__blur">
+      <div class="header__logo">
+        <a href="#home"><img src="assets/images/money-logo.png" alt="Freepik icon"></a>
+      </div>
+
+      <div id="header__button">
+        <button class="button" type="button" onclick="toggle()">Converter Agora <i class="fas fa-arrow-right button--icon"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--=== HOME ===-->
+    <section class="section" id="home">
+      <div class="wrapper grid" id="home__blur">
+        <div class="home__image">
+          <img src="assets/images/home-image.svg" alt="">
+          <div class="home__background"></div>
+        </div>
+
+        <div class="home__text">
+          <h1 class="title">Conversor de Moedas</h1>
+          <p class="paragraph">Descubra os valores convertidos de dolar para real ou de real para dolar.</p>
+
+          <div id="home__button">
+            <button class="button" type="button" onclick="toggle()">Converter Agora <i class="fas fa-arrow-right button--icon"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!--=== CONVERTER POPUP ===-->
+      <div class="home__converter" id="popup">
+        <a class="close-icon" id="close-icon" onclick="toggle()"></a>
+        <div class="home__image--imersao">
+          <img src="assets/images/imersao-dev-logo.svg" alt="Imersão Dev">
+        </div>
+
+        <div class="home__text--converter">
+          <h2 class="title">Conversor de Moedas</h2>
+        </div>
+
+        <form action="#" class="converter__form">
+          <div class="converter__form--box" id="converter__form--dollar">
+            <label class="converter__label" id="converter__label--dollar" for="currency"><span id="converter__span--dollar">US$</span><i class="fas fa-money-bill converter__label--icon"></i>Dólar</label>
+            <input class="converter__input" type="number" id="dollar" value="0">
+          </div>
+
+          <div class="converter--icon"><i class="fas fa-exchange-alt converter__icon--arrow" id="flashing"></i></div>
+
+          <div class="converter__form--box" id="converter__form--real">
+            <label class="converter__label" id="converter__label--real" for="currency"><span id="converter__span--real">R$</span><i class="fas fa-money-bill converter__label--icon"></i>Real</label>
+            <input class="converter__input" type="number" id="real" value="0">
+          </div>
+
+          <div class="converter__button">
+            <button type="button" class="button" onclick="toConvert()" id="convert__button">Converter</button>
+          </div>
+        </form>
+
+        <div class="home__converter--logo">
+          <a href="https://alura.com.br/" target="_blank"><img src="assets/images/alura-logo.svg" alt="Alura Logo"></a>
+        </div>
+      </div>
+    </section>
+
+    <!--=== FOOTER ===-->
+    <footer id="footer">
+      <div class="wrapper">
+        <span class="footer__credits">Criado por <a href="https://github.com/LeonardoYz" target="_blank">LeonardoYz <i class="fab fa-github credits--icon"></i></a></span>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
