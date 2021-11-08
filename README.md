@@ -3,7 +3,7 @@
 <div align="center">
   <h3>My solution to the currency converter challenge (Imersão Dev of <a href="https://www.alura.com.br/" target="_blank">Alura</a>)</h3>
 </div>
-<br>
+
 <div align="center">
   <h2>
     <a href="">
